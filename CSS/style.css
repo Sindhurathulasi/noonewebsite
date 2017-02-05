@@ -1,0 +1,604 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.background {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.milanBG {
+	background-image: url(../assests/milanBG.jpg);
+}
+
+.logo {
+	max-width: 120px;
+	width: 100%;
+	position: fixed;
+	top: 20px;
+	left: 30px;
+	z-index: 1;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 30%;
+	left: 90%; 
+	z-index: 1;
+}
+
+.navigation img {
+	margin: 15px;
+	max-width: 45px;
+}
+
+.text_wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: rgba(239, 239, 239, 1);
+}
+
+.container2 {
+	max-width: 280px;
+}
+
+.wrapper {
+	text-align: left;
+}
+
+.red_strip {
+	width: 50px; 
+	height: 2px;
+	margin-bottom: 10px;
+	background-color: rgba(239, 78, 82, 1);
+}
+
+#milan .red_strip {
+	margin-bottom: -10px;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 3.5em;
+}
+
+.light_text {
+	font-weight: 300;
+	font-size: 1.2em;
+	color: rgba(146, 146, 146, 1);
+}
+
+.bold_text {
+	font-weight: 700;
+	font-size: 1.6em;
+	margin-top: 8px;
+	line-height: 1.6em;
+	color: rgba(239, 239, 239, 1);
+}
+
+#work {
+	margin-top: -5px;
+}
+
+.workBG {
+	background-image: url(../assests/woodBG.jpg);
+}
+
+.subHeading {
+	font-weight: 700;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	letter-spacing: 4px;
+	color: rgba(239, 239, 239, 1);
+}
+
+.buttons {
+	height: 55px;
+	margin-top: 25px;
+	background-color: rgba(43, 43, 43, 1);
+	border-top: 2px solid rgba(239, 78, 82, 1);
+	color: rgba(238, 239, 239, 1);
+	font-size: 1.2em;
+	text-align: center;
+	padding: 14px;
+}
+
+.buttons:hover {
+	background-color: rgba(239, 78, 82, 0.75);
+	color: rgba(239, 239, 239, 1);
+}
+
+#rent {
+	margin-top: -5px;
+}
+
+.rentBG {
+	background-image: url(../assests/studioBG.jpg);
+}
+
+.contactBG {
+	background-color: rgba(25, 25, 25, 1);
+}
+
+#footer {
+	background-color: rgba(25, 25, 25, 1);
+	border-top: 1px solid rgba(239, 239, 239, 1);
+}
+
+.footerBG {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 10%;
+	padding: 20px 0;
+	background-color: rgba(25, 25, 25, 1);
+}
+
+.footer_text {
+	color: rgba(239, 239, 239, 1);
+	font-size: 1em;
+	font-weight: 300;
+}
+
+span {
+	color: rgba(239, 78, 82, 1);
+}
+
+/*** WORKS ***/
+
+a {
+	text-decoration: none;
+}
+
+.workContainer {
+	width: 100%;
+	height: auto;
+	background-color: rgba(25, 25, 25, 1);
+}
+
+.workSubcontainer {
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.workSubcontainer_inside {
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	padding-top: 120px;
+	max-width: 1000px;
+	width: 100%;
+}
+
+.workImgs {
+	max-width: 290px;
+	width: 100%;
+	height: 200px; 
+	margin: 15px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.campari1 {
+	background-image: url(../assests/campari_passion.jpg);
+}
+
+.campari2 {
+	background-image: url(../assests/campari_cocktails.jpg);
+}
+
+.campari3 {
+	background-image: url(../assests/campari_enjoy.jpg);
+}
+
+.workHeading {
+	height: 55px;
+	background-color: rgba(25, 25, 25, 0.9);
+	font-size: 1em;
+	color: rgba(247, 247, 247, 1);
+	border-top: 2px solid rgba(239, 78, 82, 1);
+	padding: 13px;
+	position: relative;
+	top: 145px;
+}
+
+.backArrow {
+	max-width: 50px;
+	width: 100%;
+	position: fixed;
+	top: 50px;
+	left: 92%;
+	z-index: 1;
+}
+
+/*** WORK DESCRIPTION PAGE ***/
+
+.closeButton {
+	max-width: 50px;
+	width: 100%;
+	position: fixed;
+	top: 50px;
+	left: 94%;
+}
+
+.projectContainer {
+	display: flex;
+}
+
+.projectDescription {
+	flex: 0 0 35%;
+	background-color: rgba(25, 25, 25, 1);
+}
+
+.left_wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 35%;
+	padding: 150px 25px 25px 25px;	
+}
+
+.projectDescription .red_strip {
+	width: 40px;
+	height: 2px;
+	background-color: rgba(239, 78, 82, 1);
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 1.4em;
+	letter-spacing: 4px;
+	color: rgba(212, 212, 212, 1);
+}
+
+.normal_text {
+	font-weight: 300;
+	font-size: 0.91em;
+	color: rgba(136, 136, 136, 1);
+}
+
+.projectWork {
+	flex: 0 0 65%;
+	background-color: rgba(25, 25, 25, 1);
+}
+
+.projectwork_sub {
+	padding-top: 10%;
+}
+
+.projectImgs {
+	max-width: 720px;
+	width: 100%;
+	height: 400px;
+	background-color: gainsboro;
+	margin: 50px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.campariImg1 {
+	background-image: url(../assests/campari_passion_01.jpg);
+}
+
+.campariImg2 {
+	background-image: url(../assests/campari_passion_02.jpg);
+}
+
+/*** RENTAL ***/
+
+.rentalContainer {
+	width: 100%;
+	height: 100%;
+}
+
+.rentalSubcontainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.rental_content {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.rentalSubcontainer_left {
+	width: 50%;
+	height: 100vh;
+	background-image: url(../assests/studio_01.jpg);
+}
+
+.rentalSubcontainer_right {
+	width: 50%;
+	height: 100vh;
+	background-image: url(../assests/studioBG.jpg);
+}
+
+.rental_content h2 {
+	text-align: left;
+	max-width: 280px;
+}
+
+.rentalSubcontainer p {
+	max-width: 280px;
+	text-align: left;
+	color: rgba(186, 186, 186, 1);
+	font-size: 1.1em;
+	margin-top: 25px;
+}
+
+.rental_content .buttons {
+	max-width: 280px;
+	width: 100%;
+}
+
+/*** ipad landscape and portrait ***/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	
+	/*** INDEX ***/
+
+	.logo {
+		max-width: 120px;
+	}
+	
+	/*** RENTAL ***/
+
+	.rentalSubcontainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.rentalSubcontainer_left {
+		width: 100%;
+	}
+
+	.rentalSubcontainer_right {
+		width: 100%;
+		margin-top: -3px;
+	}	
+}
+
+/*** ipad landscape ***/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	
+	/*** INDEX ***/
+
+	.light_text {
+		font-size: 1.3em;
+	}
+
+	.bold_text {
+		font-size: 1.7em;
+	}
+
+	.subHeading {
+		font-size: 1.5em;
+	}
+
+	.buttons {
+		font-size: 1.2em;
+	}
+
+	.buttons:hover {
+		background-color: rgba(43, 43, 43, 1);
+	}
+	
+	#contact {
+		margin-top: -5px;
+	}
+	
+	/* RENTAL */
+	
+	.rentalSubcontainer p {
+		font-size: 1.2em;
+	}
+	
+}
+
+/*** ipad portrait ***/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	
+	/*** INDEX ***/
+	
+	.light_text {
+		font-size: 1.4em;
+	}
+
+	.bold_text {
+		font-size: 1.8em;
+	}
+	
+	.navigation {
+		top: 35%;
+		left: 86%; 
+	}
+
+	.subHeading {
+		font-size: 1.6em;
+	}
+
+	.buttons {
+		font-size: 1.3em;
+	}
+	
+	/** RENTAL **/
+
+	.rentalSubcontainer p {
+		font-size: 1.4em;
+	}
+}
+
+/** Smartphones (landscape) **/
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) {
+	
+	/*** RENTAL ***/
+
+	.rentalSubcontainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.rentalSubcontainer_left {
+		width: 100%;
+	}
+
+	.rentalSubcontainer_right {
+		width: 100%;
+		margin-top: -3px;
+	}	
+	
+	.rental_content h2 {
+		max-width: 250px;
+	}
+
+	.rentalSubcontainer p {
+		max-width: 250px;
+		font-size: 1em;
+		margin-top: 20px;
+	}
+
+	.rental_content .buttons {
+		max-width: 250px;
+	}
+
+}
+
+/** Smartphones (portrait and landscape) **/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	
+	/*** INDEX ***/
+	
+	.logo {
+		max-width: 75px;
+		top: 10px;
+		left: 15px;
+	}
+	
+	.navigation {
+		top: 30%;
+		left: 80%;
+	}
+
+	.navigation img {
+		margin: 10px;
+		max-width: 30px;
+	}
+
+	.container2 {
+		max-width: 160px;
+	}
+	
+	.red_strip {
+		width: 30px;
+	}
+	
+	h1 {
+		font-size: 2.5em;
+	}
+
+	.light_text {
+		font-size: 1em;
+	}
+
+	.bold_text {
+		font-size: 1.2em;
+	}
+
+	.subHeading {
+		font-size: 1.1em;
+	}
+
+	.buttons {
+		height: 45px;
+		margin-top: 20px;
+		font-size: 1em;
+		padding: 10px;
+	}
+	
+	#contact {
+		margin-top: -7px;
+	}
+	
+	/*** RENTAL ***/
+	
+	.rentalSubcontainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.rentalSubcontainer_left {
+		width: 100%;
+	}
+
+	.rentalSubcontainer_right {
+		width: 100%;
+		margin-top: -3px;
+	}	
+	
+	.rental_content h2 {
+		max-width: 250px;
+	}
+
+	.rentalSubcontainer p {
+		max-width: 250px;
+		font-size: 1em;
+		margin-top: 20px;
+	}
+
+	.rental_content .buttons {
+		max-width: 250px;
+	}
+	
+	.backArrow {
+		max-width: 40px;
+		top: 30px;
+		left: 85%;
+	}
+
+}
+
+
+
+
+
+
+
