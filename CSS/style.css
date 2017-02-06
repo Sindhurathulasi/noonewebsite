@@ -23,10 +23,13 @@
 .logo {
 	max-width: 120px;
 	width: 100%;
+	margin-left: 32px;
+}
+
+article .logo {
 	position: fixed;
-	top: 20px;
-	left: 30px;
-	z-index: 1;
+	top: 15px;
+	z-index: 10;
 }
 
 .navigation {
@@ -170,6 +173,9 @@ a {
 .header {
 	width: 100%;
 	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -238,10 +244,35 @@ a {
 .backArrow {
 	max-width: 50px;
 	width: 100%;
-	position: fixed;
-	top: 50px;
-	left: 92%;
-	z-index: 1;
+	margin-right: 50px;
+}
+
+.clientContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.clientSubContainer {
+	max-width: 930px;
+	width: 100%;
+	margin: 40px 15px 0 15px;
+}
+
+.clients {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.clientlogos {
+	max-width: 170px;
+	width: 100%;
+	margin: 12px;
+	opacity: 0.4;
 }
 
 /*** WORK DESCRIPTION PAGE ***/
@@ -249,17 +280,17 @@ a {
 .closeButton {
 	max-width: 40px;
 	width: 100%;
-	position: fixed;
-	top: 50px;
-	left: 94%;
+	margin-right: 50px;
 }
 
 .projectContainer {
 	display: flex;
+	justify-content: space-between;
+	height: 100%;
 }
 
 .projectDescription {
-	flex: 0 0 35%;
+	width: 40%;
 	background-color: rgba(25, 25, 25, 1);
 }
 
@@ -267,8 +298,8 @@ a {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 35%;
-	padding: 150px 25px 25px 25px;	
+	width: 40%;
+	padding: 150px 26px 26px 40px;	
 }
 
 .projectDescription .red_strip {
@@ -286,25 +317,28 @@ h2 {
 
 .normal_text {
 	font-weight: 300;
-	font-size: 0.91em;
+	font-size: 0.9em;
 	color: rgba(136, 136, 136, 1);
 }
 
 .projectWork {
-	flex: 0 0 65%;
+	width: 60%;
 	background-color: rgba(25, 25, 25, 1);
 }
 
 .projectwork_sub {
 	padding-top: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
 }
 
 .projectImgs {
-	max-width: 720px;
+	max-width: 650px;
 	width: 100%;
 	height: 400px;
-	background-color: gainsboro;
-	margin: 50px;
+	margin: 70px 20px 0px 20px;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -323,6 +357,10 @@ h2 {
 .rentalContainer {
 	width: 100%;
 	height: 100%;
+}
+
+.rentalContainer .header {
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .rentalSubcontainer {
@@ -348,7 +386,7 @@ h2 {
 .rentalSubcontainer_right {
 	width: 50%;
 	height: 100vh;
-	background-image: url(../assests/rental/studioBG.jpg);
+	background-image: url(../assests/rental/cameraEquipments-13.jpg);
 }
 
 .rental_content h2 {
@@ -360,6 +398,7 @@ h2 {
 	max-width: 280px;
 	text-align: left;
 	color: rgba(186, 186, 186, 1);
+	font-weight: 300;
 	font-size: 1.1em;
 	margin-top: 25px;
 }
@@ -369,43 +408,22 @@ h2 {
 	width: 100%;
 }
 
-/*** ipad landscape and portrait ***/
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
+@media (max-width: 1024px) {
 	
-	/*** INDEX ***/
-
+	/** INDEX **/
+	
 	.logo {
-		max-width: 120px;
-	}
-	
-	/*** RENTAL ***/
-
-	.rentalSubcontainer {
-		display: flex;
-		flex-direction: column;
+		margin-left: 30px;
 	}
 
-	.rentalSubcontainer_left {
-		width: 100%;
+	.navigation {
+		top: 32%;
+		left: 87%; 
 	}
 
-	.rentalSubcontainer_right {
-		width: 100%;
-		margin-top: -3px;
-	}	
-}
-
-/*** ipad landscape ***/
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-	
-	/*** INDEX ***/
+	h1 {
+		font-size: 3.6em;
+	}
 
 	.light_text {
 		font-size: 1.3em;
@@ -427,58 +445,53 @@ and (orientation : landscape) {
 		background-color: rgba(43, 43, 43, 1);
 	}
 	
-	#contact {
-		margin-top: -5px;
+	/** work description **/
+
+	.projectContainer {
+		flex-direction: column;
+	}
+
+	.projectDescription {
+		width: 100%;
+	}
+
+	.left_wrapper {
+		position: relative;
+		width: 550px;
+	}
+
+	.normal_text {
+		font-size: 0.9em;
+	}
+
+	.projectWork {
+		width: 100%;
+	}
+
+	.projectwork_sub {
+		padding-top: 1px;
+		box-shadow: -1px -4px 12px -4px rgba(0,0,0,1);
+	}
+
+	.projectImgs {
+		max-width: 720px;
 	}
 	
-	/* RENTAL */
-	
-	.rentalSubcontainer p {
-		font-size: 1.2em;
-	}
-	
-}
+	/** WORKS **/
 
-/*** ipad portrait ***/
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-	
-	/*** INDEX ***/
-	
-	.light_text {
-		font-size: 1.4em;
+	.workSubcontainer_inside {
+		max-width: 768px;
 	}
 
-	.bold_text {
-		font-size: 1.8em;
-	}
-	
-	.navigation {
-		top: 35%;
-		left: 86%; 
+	.workImgs {
+		max-width: 320px;
+		margin: 18px;
 	}
 
-	.subHeading {
-		font-size: 1.6em;
+	.clientSubContainer {
+		max-width: 682px;
+		margin: 50px 15px 0 15px;
 	}
-
-	.buttons {
-		font-size: 1.3em;
-	}
-	
-	/** RENTAL **/
-
-	.rentalSubcontainer p {
-		font-size: 1.4em;
-	}
-}
-
-/** Smartphones (landscape) **/
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) {
 	
 	/*** RENTAL ***/
 
@@ -494,38 +507,109 @@ and (orientation : portrait) {
 	.rentalSubcontainer_right {
 		width: 100%;
 		margin-top: -3px;
-	}	
-	
-	.rental_content h2 {
-		max-width: 250px;
 	}
-
-	.rentalSubcontainer p {
-		max-width: 250px;
-		font-size: 1em;
-		margin-top: 20px;
-	}
-
-	.rental_content .buttons {
-		max-width: 250px;
-	}
-
 }
 
-/** Smartphones (portrait and landscape) **/
+@media (max-width: 768px) {
+	
+	/** INDEX **/
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.navigation {
+		top: 32%;
+		left: 87%; 
+	}
+	
+	.navigation img {
+		margin: 13px;
+		max-width: 35px;
+	}
+
+	.container2 {
+		max-width: 210px;
+	}
+
+	h1 {
+		font-size: 3.6em;
+	}
+
+	.light_text {
+		font-size: 1.2em;
+	}
+
+	.bold_text {
+		font-size: 1.6em;
+	}
+
+	.subHeading {
+		font-size: 1.4em;
+	}
+	
+	.footerBG {
+		margin: 0 16px;
+	}
+
+	.footer_text {
+		font-size: 0.85em;
+	}
+	
+	#footer .normal_text {
+		font-size: 0.85em;
+	}
+
+	/** work description **/
+
+	.left_wrapper {
+		width: 414px;
+	}
+
+	.projectImgs {
+		max-width: 660px;
+	}
+	
+	/** WORKS **/
+
+	.workImgs {
+		max-width: 300px;
+		margin: 15px;
+	}
+
+	.clientSubContainer {
+		max-width: 620px;
+		margin: 50px 15px 0 15px;
+	}
+
+	.clientlogos {
+		max-width: 160px;
+	}
+	
+	/* RENTAL */
+	
+	.rentalSubcontainer p {
+		font-size: 1.2em;
+	}
+	
+	.backArrow {
+		max-width: 50px;
+		margin-right: 40px;
+	}
+}
+
+@media (max-width: 414px) {
+
+	
+	.header {
+		height: 120px;
+	}
 	
 	/*** INDEX ***/
 	
 	.logo {
-		max-width: 75px;
-		top: 10px;
-		left: 15px;
+		max-width: 80px;
+		margin-left: 15px;
 	}
 	
 	.navigation {
-		top: 30%;
+		top: 33%;
 		left: 80%;
 	}
 
@@ -544,6 +628,7 @@ and (orientation : portrait) {
 	
 	h1 {
 		font-size: 2.5em;
+		margin-top: 8px;
 	}
 
 	.light_text {
@@ -569,21 +654,58 @@ and (orientation : portrait) {
 		margin-top: -7px;
 	}
 	
-	/*** RENTAL ***/
+	.footerBG {
+		margin: 0 10px;
+		padding: 20px 0;
+	}
+
+	.footer_text {
+		font-size: 0.8em;
+	}
 	
-	.rentalSubcontainer {
-		display: flex;
-		flex-direction: column;
+	#footer .normal_text {
+		font-size: 0.8em;
+	}
+	
+	/** work description **/
+
+	.closeButton {
+		max-width: 35px;
+		margin-right: 25px;
+	}
+	
+	.left_wrapper {
+		width: 320px;
+		padding: 120px 20px 20px 23px;
 	}
 
-	.rentalSubcontainer_left {
-		width: 100%;
+	.projectImgs {
+		max-width: 340px;
+		background-size: contain;
+		margin: -60px 0px -100px 0px;
+	}
+	
+	/** WORKS **/
+	
+	.workSubcontainer_inside {
+		padding-top: 120px;
+	}
+	
+	.workImgs {
+		max-width: 320px;
+		margin: 10px;
 	}
 
-	.rentalSubcontainer_right {
-		width: 100%;
-		margin-top: -3px;
-	}	
+	.clientSubContainer {
+		max-width: 320px;
+	}
+
+	.clientlogos {
+		max-width: 160px;
+		margin: 5px;
+	}
+	
+	/** RENTAL **/
 	
 	.rental_content h2 {
 		max-width: 250px;
@@ -591,8 +713,7 @@ and (orientation : portrait) {
 
 	.rentalSubcontainer p {
 		max-width: 250px;
-		font-size: 1em;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 
 	.rental_content .buttons {
@@ -600,11 +721,110 @@ and (orientation : portrait) {
 	}
 	
 	.backArrow {
-		max-width: 40px;
-		top: 30px;
-		left: 85%;
+		max-width: 45px;
+		margin-right: 25px;
+	}
+} 
+
+@media (max-width: 320px) {
+	
+	/** INDEX **/
+	
+	.logo {
+		max-width: 65px;
+		margin-left: 15px;
+	}
+	
+	.navigation img {
+		margin: 10px;
+		max-width: 30px;
 	}
 
+	.container2 {
+		max-width: 160px;
+	}
+	
+	.red_strip {
+		width: 30px;
+	}
+	
+	h1 {
+		font-size: 2.4em;
+		margin-top: 8px;
+	}
+
+	.light_text {
+		font-size: 0.9em;
+	}
+
+	.bold_text {
+		font-size: 1.05em;
+	}
+
+	.subHeading {
+		font-size: 1.1em;
+	}
+
+	.buttons {
+		margin-top: 15px;
+		font-size: 1em;
+	}
+	
+	.footerBG {
+		margin: 0 5px;
+	}
+
+	.footer_text {
+		font-size: 0.7em;
+	}
+	
+	#footer .normal_text {
+		font-size: 0.7em;
+	}
+	
+	/** work description **/
+	
+	.left_wrapper {
+		width: 320px;
+		font-size: 0.8em;
+	}
+
+	.projectImgs {
+		max-width: 280px;
+		margin: -80px 0px -130px 0px;
+	}
+	
+	/** WORKS **/
+
+	.workImgs {
+		max-width: 320px;
+		margin: 5px 10px;
+	}
+
+	.clientSubContainer {
+		max-width: 295px;
+	}
+
+	.clientlogos {
+		max-width: 170px;
+		margin: 1px;
+	}
+	
+	/** RENTAL **/
+	
+	.rental_content h2 {
+		max-width: 220px;
+	}
+
+	.rentalSubcontainer p {
+		max-width: 220px;
+		font-size: 1em;
+		margin-top: 10px;
+	}
+
+	.rental_content .buttons {
+		max-width: 220px;
+	}
 }
 
 
