@@ -17,7 +17,7 @@
 }
 
 .milanBG {
-	background-image: url(../assests/milanBG.jpg);
+	background-image: url(../assests/index/milanBG1-12.jpg);
 }
 
 .logo {
@@ -76,7 +76,8 @@
 
 h1 {
 	font-weight: 900;
-	font-size: 3.5em;
+	font-size: 3.6em;
+	font-family: 'Roboto', sans-serif;
 }
 
 .light_text {
@@ -98,7 +99,7 @@ h1 {
 }
 
 .workBG {
-	background-image: url(../assests/woodBG.jpg);
+	background-image: url(../assests/index/woodBG.jpg);
 }
 
 .subHeading {
@@ -130,7 +131,7 @@ h1 {
 }
 
 .rentBG {
-	background-image: url(../assests/studioBG.jpg);
+	background-image: url(../assests/index/studioBG.jpg);
 }
 
 .contactBG {
@@ -166,6 +167,16 @@ a {
 	text-decoration: none;
 }
 
+.header {
+	width: 100%;
+	height: 150px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(25, 25, 25, 1);
+	z-index: 10;
+}
+
 .workContainer {
 	width: 100%;
 	height: auto;
@@ -186,7 +197,7 @@ a {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	padding-top: 120px;
+	padding-top: 150px;
 	max-width: 1000px;
 	width: 100%;
 }
@@ -202,15 +213,15 @@ a {
 }
 
 .campari1 {
-	background-image: url(../assests/campari_passion.jpg);
+	background-image: url(../assests/works/campari_passion.jpg);
 }
 
 .campari2 {
-	background-image: url(../assests/campari_cocktails.jpg);
+	background-image: url(../assests/works/campari_cocktails.jpg);
 }
 
 .campari3 {
-	background-image: url(../assests/campari_enjoy.jpg);
+	background-image: url(../assests/works/campari_enjoy.jpg);
 }
 
 .workHeading {
@@ -300,11 +311,11 @@ h2 {
 }
 
 .campariImg1 {
-	background-image: url(../assests/campari_passion_01.jpg);
+	background-image: url(../assests/campariPassion/campari_passion_01.jpg);
 }
 
 .campariImg2 {
-	background-image: url(../assests/campari_passion_02.jpg);
+	background-image: url(../assests/campariPassion/campari_passion_02.jpg);
 }
 
 /*** RENTAL ***/
@@ -331,13 +342,13 @@ h2 {
 .rentalSubcontainer_left {
 	width: 50%;
 	height: 100vh;
-	background-image: url(../assests/studio_01.jpg);
+	background-image: url(../assests/rental/studio_01.jpg);
 }
 
 .rentalSubcontainer_right {
 	width: 50%;
 	height: 100vh;
-	background-image: url(../assests/studioBG.jpg);
+	background-image: url(../assests/rental/studioBG.jpg);
 }
 
 .rental_content h2 {
