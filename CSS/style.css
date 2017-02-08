@@ -179,7 +179,7 @@ a {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: rgba(25, 25, 25, 1);
+	background-color: rgba(25, 25, 25, 0.8);
 	z-index: 10;
 }
 
@@ -218,32 +218,72 @@ a {
 	background-repeat: no-repeat;
 }
 
-.campari1 {
+.work1 {
+	background-image: url(../assests/works/4salti.jpg);
+}
+
+.work2 {
 	background-image: url(../assests/works/campari_passion.jpg);
 }
 
-.campari2 {
+.work3 {
 	background-image: url(../assests/works/campari_cocktails.jpg);
 }
 
-.campari3 {
+.work4 {
 	background-image: url(../assests/works/campari_enjoy.jpg);
 }
 
-.campari4 {
+.work5 {
+	background-image: url(../assests/works/natevo.jpg);
+}
+
+.work6 {
 	background-image: url(../assests/works/allegrini.jpg);
 }
 
-.campari5 {
+.work7 {
+	background-image: url(../assests/works/flou.jpg);
+}
+
+.work7a {
+	background-image: url(../assests/works/flou.jpg);
+}
+
+.work7b {
+	background-image: url(../assests/works/flou.jpg);
+}
+
+.work7c {
+	background-image: url(../assests/works/flou.jpg);
+}
+
+.work7d {
+	background-image: url(../assests/works/FlouBW.jpg);
+}
+
+.work8 {
 	background-image: url(../assests/works/oscar697.jpg);
 }
 
-.campari6 {
+.work9 {
+	background-image: url(../assests/works/samsung.jpg);
+}
+
+.work10 {
 	background-image: url(../assests/works/martini.jpg);
 }
 
-.campari7 {
+.work11 {
 	background-image: url(../assests/works/miabag.jpg);
+}
+
+.work12 {
+	background-image: url(../assests/works/gazzettastore.jpg);
+}
+
+.work13 {
+	background-image: url(../assests/works/natevo.jpg);
 }
 
 .workHeading {
@@ -252,9 +292,18 @@ a {
 	font-size: 1em;
 	color: rgba(247, 247, 247, 1);
 	border-top: 2px solid rgba(239, 78, 82, 1);
-	padding: 13px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	position: relative;
 	top: 145px;
+}
+
+.workText {
+	font-size: 0.9em;
+	font-weight: 300;
+	color: rgba(146, 146, 146, 1);
 }
 
 .backArrow {
@@ -343,7 +392,7 @@ h2 {
 }
 
 .projectwork_sub {
-	padding-top: 10%;
+	padding-top: 85px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
