@@ -1,18 +1,15 @@
-/* window.onload = function () {
-  var styles = [
-    // we will add the style rules here.
-  ];
-  var options = {
-  mapTypeControlOptions: {
-    mapTypeIds: ['Styled']
-  },
-    center: new google.maps.LatLng(-7.245217594087794, 112.74455556869509),
-    zoom: 16,
-    disableDefaultUI: true, 
-    mapTypeId: 'Styled'
-  };
-  var div = document.getElementById('nooneMap');
-  var map = new google.maps.Map(div, options);
-  var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
-  map.mapTypes.set('Styled', styledMapType);
-};
+var headerOffset  = 100;
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 750);
+        return false;
+      }
+    }
+  });
+});

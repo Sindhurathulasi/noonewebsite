@@ -179,7 +179,7 @@ a {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: rgba(25, 25, 25, 0.8);
+	background-color: rgba(25, 25, 25, 0);
 	z-index: 10;
 }
 
@@ -218,72 +218,80 @@ a {
 	background-repeat: no-repeat;
 }
 
-.work1 {
+.salti {
 	background-image: url(../assests/works/4salti.jpg);
 }
 
-.work2 {
+.campariPassion {
 	background-image: url(../assests/works/campari_passion.jpg);
 }
 
-.work3 {
+.campariCocktails {
 	background-image: url(../assests/works/campari_cocktails.jpg);
 }
 
-.work4 {
+.campariEnjoy {
 	background-image: url(../assests/works/campari_enjoy.jpg);
 }
 
-.work5 {
+.natevo {
 	background-image: url(../assests/works/natevo.jpg);
 }
 
-.work6 {
+.allegrini {
 	background-image: url(../assests/works/allegrini.jpg);
 }
 
-.work7 {
-	background-image: url(../assests/works/flou.jpg);
+.rayban {
+	background-image: url(../assests/works/rayban.jpg);
 }
 
-.work7a {
-	background-image: url(../assests/works/flou.jpg);
+.raybanTryon {
+	background-image: url(../assests/works/raybanTryon.jpg);
 }
 
-.work7b {
-	background-image: url(../assests/works/flou.jpg);
+.bond {
+	background-image: url(../assests/works/bond.jpg);
 }
 
-.work7c {
-	background-image: url(../assests/works/flou.jpg);
+.flouShowroom {
+	background-image: url(../assests/works/flouShowroom.jpg);
 }
 
-.work7d {
+.flouWebsite {
+	background-image: url(../assests/works/flouWebsite.jpg);
+}
+
+.flouConfigurator {
+	background-image: url(../assests/works/flouConfigurator.jpg);
+}
+
+.flouInterviews {
+	background-image: url(../assests/works/flouInterviews.jpg);
+}
+
+.flouBandW {
 	background-image: url(../assests/works/FlouBW.jpg);
 }
 
-.work8 {
+.oscar {
 	background-image: url(../assests/works/oscar697.jpg);
 }
 
-.work9 {
+.samsung {
 	background-image: url(../assests/works/samsung.jpg);
 }
 
-.work10 {
+.martini {
 	background-image: url(../assests/works/martini.jpg);
 }
 
-.work11 {
+.miaBag {
 	background-image: url(../assests/works/miabag.jpg);
 }
 
-.work12 {
+.gazza {
 	background-image: url(../assests/works/gazzettastore.jpg);
-}
-
-.work13 {
-	background-image: url(../assests/works/natevo.jpg);
 }
 
 .workHeading {
@@ -307,7 +315,7 @@ a {
 }
 
 .backArrow {
-	max-width: 50px;
+	max-width: 60px;
 	width: 100%;
 	margin-right: 50px;
 }
@@ -346,6 +354,10 @@ a {
 	max-width: 40px;
 	width: 100%;
 	margin-right: 50px;
+}
+
+.white {
+	display: none;
 }
 
 .projectContainer {
@@ -391,6 +403,14 @@ h2 {
 	background-color: rgba(25, 25, 25, 1);
 }
 
+.whiteBG {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.miaBG {
+	background-color: rgba(231, 230, 221, 1);
+}
+
 .projectwork_sub {
 	padding-top: 85px;
 	display: flex;
@@ -404,6 +424,62 @@ h2 {
 	width: 100%;
 	margin: 70px 20px 0px 20px;
 }
+
+/**
+.slideContainer {
+	max-width: 650px;
+	width: 100%;
+	height: 400px;
+}
+
+.slider-wrapper{
+	overflow: hidden;
+	position:relative;
+	height:280px;
+	top:auto;
+}
+
+#slides {
+	position: relative;
+	height: auto;
+	list-style: none;
+	overflow: hidden;
+	float: left;
+	padding:0px;
+	margin-top: 70px;
+}
+
+#slides li {
+	position: relative;
+}
+
+#slides img {
+	max-width: 650px;
+	width: 100%;
+}
+
+.nvgt{
+	position:absolute;
+	top: 120px;
+	height: 50px;
+	width: 30px;
+	opacity: 0.6;
+}
+.nvgt:hover{
+	opacity: 0.9;
+}
+
+#prev{
+	background: #000 url('https://dl.dropboxusercontent.com/u/65639888/image/prev.png') no-repeat center;
+	left: 0px;
+}
+
+#next{
+	background: #000 url('https://dl.dropboxusercontent.com/u/65639888/image/next.png') no-repeat center;
+	right: 0px;
+}
+
+**/
 
 /*** RENTAL ***/
 
@@ -546,6 +622,16 @@ h2 {
 		margin: 50px 15px 0 15px;
 	}
 	
+	/** work description page **/
+	
+	.white {
+		display: block;
+	}
+	
+	.black {
+		display: none;
+	}
+	
 	/*** RENTAL ***/
 
 	.rentalSubcontainer {
@@ -642,7 +728,7 @@ h2 {
 	}
 	
 	.backArrow {
-		max-width: 50px;
+		max-width: 60px;
 		margin-right: 40px;
 	}
 }
