@@ -44,8 +44,8 @@ article .logo {
 }
 
 .navigation img {
-	margin: 15px;
 	max-width: 45px;
+	margin: 15px;
 }
 
 .text_wrapper {
@@ -139,6 +139,17 @@ h1 {
 
 .contactBG {
 	background-color: rgba(25, 25, 25, 1);
+}
+
+#nooneMap {
+	background-color: rgba(25, 25, 25, 1);
+	position: relative;
+}
+
+#map {
+	max-width: 1280px;
+	width: 100%;
+	height: 500px;
 }
 
 #footer {
@@ -481,6 +492,133 @@ h2 {
 	width: 100%;
 }
 
+@media (min-width: 1280px) and (max-width: 1920px) {
+	/** INDEX **/
+	
+	.logo {
+		max-width: 160px;
+		margin-left: 30px;
+	}
+
+	.navigation { 
+		top: 33.5%;
+	}
+	
+	.navigation img {
+		max-width: 50px;
+		margin: 18px;
+	}
+	
+	h1 {
+		font-size: 4.6em;
+	}
+
+	.light_text {
+		font-size: 1.5em;
+	}
+
+	.bold_text {
+		font-size: 1.8em;
+	}
+
+	.subHeading {
+		font-size: 1.7em;
+	}
+
+	.buttons {
+		font-size: 1.3em;
+		padding: 11px;
+	}
+	
+	#map {
+		max-width: 1920px;
+		height: 100vh;
+	}
+	
+	/*** WORKS ***/
+	
+	.workSubcontainer_inside {
+		padding-top: 170px;
+		max-width: 1500px;
+	}
+
+	.workImgs {
+		max-width: 400px;
+		height: 300px; 
+		margin: 18px;
+	}
+
+	.workHeading {
+		height: 60px;
+		font-size: 1.2em;
+		top: 240px;
+	}
+
+	.workText {
+		font-size: 1em;
+	}
+
+	.backArrow {
+		max-width: 60px;
+		margin-right: 45px;
+	}
+
+	.clientSubContainer {
+		max-width: 1280px;
+		margin: 60px 15px 0 15px;
+	}
+
+	.clientlogos {
+		max-width: 220px;
+		width: 100%;
+		margin: 20px 26px;
+		opacity: 0.4;
+	}
+	
+	/*** WORK DESCRIPTION PAGE ***/
+
+	.closeButton {
+		max-width: 50px;
+		margin-right: 45px;
+	}
+
+	.left_wrapper {
+		padding: 180px 26px 26px 80px;	
+	}
+
+	h2 {
+		font-size: 1.6em;
+	}
+
+	.normal_text {
+		font-size: 1em;
+	}
+
+	.projectwork_sub {
+		padding-top: 120px;
+	}
+
+	.projectImgs {
+		max-width: 780px;
+	}
+	
+	/*** RENTAL ***/
+
+	.rental_content h2 {
+		max-width: 300px;
+	}
+
+	.rentalSubcontainer p {
+		max-width: 300px;
+		font-size: 1.2em;
+		margin-top: 30px;
+	}
+
+	.rental_content .buttons {
+		max-width: 300px;
+	}
+}
+
 @media (max-width: 1024px) {
 	
 	/** INDEX **/
@@ -564,6 +702,10 @@ h2 {
 	.clientSubContainer {
 		max-width: 682px;
 		margin: 50px 15px 0 15px;
+	}
+	
+	.emptyLast {
+		display: none;
 	}
 	
 	/** work description page **/
@@ -652,17 +794,21 @@ h2 {
 	/** WORKS **/
 
 	.workImgs {
-		max-width: 300px;
+		max-width: 280px;
 		margin: 15px;
 	}
 
 	.clientSubContainer {
-		max-width: 620px;
+		max-width: 600px;
 		margin: 50px 15px 0 15px;
 	}
 
 	.clientlogos {
 		max-width: 160px;
+	}
+	
+	.emptyLast {
+		display: none;
 	}
 	
 	/* RENTAL */
@@ -674,6 +820,25 @@ h2 {
 	.backArrow {
 		max-width: 40px;
 		margin-right: 40px;
+	}
+}
+
+@media (max-width: 616px) {
+	
+	/** WORKS **/
+
+	.workImgs {
+		max-width: 380px;
+		margin: 15px;
+	}
+	
+	.clientSubContainer {
+		max-width: 380px;
+		margin: 50px 15px 0 15px;
+	}
+	
+	.empty {
+		display: none;
 	}
 }
 
