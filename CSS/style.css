@@ -138,7 +138,7 @@ h1 {
 }
 
 .contactBG {
-	background-color: rgba(25, 25, 25, 1);
+	background-image: url(../assests/index/contactBG_1.jpg);
 }
 
 #nooneMap {
@@ -149,10 +149,11 @@ h1 {
 #map {
 	max-width: 1280px;
 	width: 100%;
-	height: 500px;
+	height: 100vh;
 }
 
 #footer {
+	margin-top: -60px;
 	background-color: rgba(25, 25, 25, 1);
 	border-top: 1px solid rgba(239, 239, 239, 1);
 }
@@ -172,6 +173,10 @@ h1 {
 }
 
 span {
+	color: rgba(239, 78, 82, 1);
+}
+
+.redLinks {
 	color: rgba(239, 78, 82, 1);
 }
 
@@ -386,6 +391,7 @@ a {
 	position: fixed;
 	top: 0;
 	left: 0;
+	max-width: 560px;
 	width: 40%;
 	padding: 150px 26px 26px 40px;	
 }
@@ -434,6 +440,10 @@ h2 {
 	max-width: 650px;
 	width: 100%;
 	margin: 70px 20px 0px 20px;
+}
+
+.shadow {
+	box-shadow: 0px 0px 38px -7px rgba(0,0,0,0.2);
 }
 
 /*** RENTAL ***/
@@ -561,6 +571,7 @@ h2 {
 	.backArrow {
 		max-width: 60px;
 		margin-right: 45px;
+		margin-top: 35px;
 	}
 
 	.clientSubContainer {
@@ -599,7 +610,7 @@ h2 {
 	}
 
 	.projectImgs {
-		max-width: 780px;
+		max-width: 850px;
 	}
 	
 	/*** RENTAL ***/

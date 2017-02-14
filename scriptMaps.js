@@ -22,28 +22,28 @@ google.maps.event.addDomListener(window, 'load', init);
                 var map = new google.maps.Map(mapElement, mapOptions);
 
                 // Let's also add a marker while we're at it
-              //   var marker = new google.maps.Marker({
-                 //    position: new google.maps.LatLng(45.492903, 9.227464),
-                   //  map: map,
-                   //  title: 'Via Arqua, 13, 20131, Milano, Italy'
-              //   }); 
+               var marker = new google.maps.Marker({
+                     position: new google.maps.LatLng(45.492903, 9.227464),
+                     map: map,
+                     title: 'Via Arqua, 13, 20131, Milano, Italy'
+               }); 
 					
-			var mapMarker = new google.maps.Marker({
-					position: {lat: 45.492903, lng: 9.227464},
-					map: map,
-					icon: {
-						url: "assests/logo&navigation/marker.png",
-						scaledSize: new google.maps.Size(95, 73)
-					}
-				});
+	//		var mapMarker = new google.maps.Marker({
+		//			position: {lat: 45.492903, lng: 9.227464},
+		//			map: map,
+		//			icon: {
+			//			url: "assests/logo&navigation/marker.png",
+			//			scaledSize: new google.maps.Size(95, 73)
+		//			}
+		//		});
 					
-			google.maps.event.addListener (mapMarker, 'click', function(){
-				var infowindow = new google.maps.InfoWindow ({
-					content: "Via Arqua, 13, 20131, Milano, Italy"
-				});
+		//	google.maps.event.addListener (mapMarker, 'click', function(){
+			//	var infowindow = new google.maps.InfoWindow ({
+			//		content: "Via Arqua, 13, 20131, Milano, Italy"
+			//	});
 				
-				infowindow.open(map, mapMarker);
-				}); 
+			//	infowindow.open(map, mapMarker);
+			//	}); 
 					
 			// var infowindow = new google.maps.InfoWindow ({
 			//	content: "Via Arqua, 13, 20131, Milano, Italy"
